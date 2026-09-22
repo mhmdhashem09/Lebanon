@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lebanese Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="music-page">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+            <h2>🇱🇧 LEBANON</h2>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="food.html">Food</a>
+                <a href="places.html">Places</a>
+                <a href="music.html">Music</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header music-header">
+        <p class="small-title">LISTEN</p>
+        <h1>The Sound of Lebanon</h1>
+        <p>Where tradition meets modern music.</p>
+    </section>
+
+    <section class="section">
+        <p class="red-title">THE SOUND OF LEBANON</p>
+        <h2>Lebanese Music</h2>
+        <p class="intro">
+            Music is an important part of Lebanese culture. From traditional
+            instruments and Dabke to modern pop, Lebanese music has developed
+            into a diverse and recognizable sound.
+        </p>
+
+        <div class="music-cards">
+            <div class="music-card">
+                <span>🎤</span>
+                <h3>Fairuz</h3>
+                <p>
+                    One of the most iconic voices in the Arab world,
+                    Fairuz's music has become deeply connected with Lebanon.
+                </p>
+                <audio id="fairuz">
+                    <source src="fairuz.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="playPause('fairuz')">
+                    CLICK ME
+                </button>
+            </div>
+
+            <div class="music-card">
+                <span>🎙️</span>
+                <h3>Sabah</h3>
+                <p>
+                    A legendary Lebanese singer and actress whose career
+                    spanned many decades.
+                </p>
+                <audio id="sabah">
+                    <source src="sabah.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="playPause('sabah')">
+                    CLICK ME
+                </button>
+            </div>
+
+            <div class="music-card">
+                <span>🎶</span>
+                <h3>Wadih El Safi</h3>
+                <p>
+                    A celebrated Lebanese singer known for his powerful voice
+                    and contribution to traditional Arabic music.
+                </p>
+                <audio id="wadih">
+                    <source src="wadih.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="playPause('wadih')">
+                    CLICK ME
+                </button>
+            </div>
+
+            <div class="music-card">
+                <span>🥁</span>
+                <h3>Dabke</h3>
+                <p>
+                    A traditional Levantine dance usually performed with
+                    rhythmic music during celebrations.
+                </p>
+                <a href="https://youtu.be/_YVZ9rmSFVY?si=ApMdM9W8JNyKR4m3"
+                target="_blank"
+                class="music-button">
+                <button>CLICK ME
+                </button>
+                </a>
+            </div>
+
+            <div class="music-card">
+                <span>🪕</span>
+                <h3>The Oud</h3>
+                <p>
+                    A traditional string instrument that plays an important
+                    role in Arabic and Lebanese music.
+                </p>
+                <audio id="oud">
+                    <source src="oud.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="playPause('oud')">
+                    CLICK ME
+                </button>
+            </div>
+
+            <div class="music-card">
+                <span>🎧</span>
+                <h3>Modern Music</h3>
+                <p>
+                    Today's Lebanese artists combine traditional influences
+                    with pop, rock, hip-hop, electronic music, and more.
+                </p>
+                <audio id="modern">
+                    <source src="modern.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="playPause('modern')">
+                    CLICK ME
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="music-quote">
+        <h2>Music carries the stories of a people.</h2>
+        <p>Traditional roots. Modern sounds. Lebanese identity.</p>
+    </section>
+
+    <footer>
+        <p>🇱🇧 Discover Lebanon — More than a destination.</p>
+    </footer>
+    <script>
+function playPause(id) {
+    var music = document.getElementById(id);
+
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+     window.addEventListener("load", function() {
+        document.getElementById("preloader").style.display = "none";
+        });
+</script>
+</body>
+</html>
